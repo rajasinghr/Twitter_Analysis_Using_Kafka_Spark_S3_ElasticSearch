@@ -35,9 +35,9 @@ import java.util.Properties;
 public class ElasticSearchConsumer {
 
     public static RestHighLevelClient createClient(){
-        String hostname = "kafka-es-twitter-6560231012.us-east-1.bonsaisearch.net";
-        String username = "oaxytmz7xj";
-        String password = "t9k2219c46";
+        String hostname = "<ES-HOST_NAME>";
+        String username = "ES-USERNAME";
+        String password = "ES-PASSWORD";
 
         final CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
         credentialsProvider.setCredentials(AuthScope.ANY, new UsernamePasswordCredentials(username,password));
