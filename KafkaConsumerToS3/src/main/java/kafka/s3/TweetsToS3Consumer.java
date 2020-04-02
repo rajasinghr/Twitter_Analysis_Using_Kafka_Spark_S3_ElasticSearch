@@ -55,9 +55,9 @@ public class TweetsToS3Consumer {
     }
 
     private static boolean uploadFile(String fileName, String uploadFilePath) {
-        String id = "AKIAZ2DZ3K2JWWTXTTA6";
-        String secret = "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";
-        String bucketName = "rajasinghr-twitter-sink/twitter-files";
+        String id = "<AWS-ACCESS-ID>";
+        String secret = "<AWS-SECRET-KEY-ID>";
+        String bucketName = "<S3-BUCKET_NAME>";
         String fileObjectName = fileName;
         BasicAWSCredentials basicAWSCredentials = new BasicAWSCredentials(id, secret);
         try {
